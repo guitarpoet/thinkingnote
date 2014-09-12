@@ -8,6 +8,12 @@
 
 #import "ThinkingAppDelegate.h"
 
+void messagebox(NSString* message) {
+    NSAlert* alert = [[NSAlert alloc] init];
+    [alert setMessageText:message];
+    [alert runModal];
+}
+
 @implementation ThinkingAppDelegate
 
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
@@ -16,6 +22,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [[self textview] setFont:[NSFont fontWithName:@"Open Sans" size:24]];
+    [[self textview] setBackgroundColor: [NSColor blackColor]];
+    [[self textview] setTextColor:[NSColor whiteColor]];
     // Insert code here to initialize your application
 }
 

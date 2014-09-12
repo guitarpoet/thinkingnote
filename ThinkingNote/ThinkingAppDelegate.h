@@ -11,6 +11,7 @@
 @interface ThinkingAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSTextView *textview;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
@@ -19,3 +20,6 @@
 - (IBAction)saveAction:(id)sender;
 
 @end
+
+
+void messagebox(NSString* text);
