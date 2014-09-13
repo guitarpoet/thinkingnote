@@ -7,14 +7,22 @@
 //
 
 #import "ThinkingNote.h"
+#import <Carbon/Carbon.h>
 
 @implementation ThinkingNote
+
+- (IBAction) show:(id)sender {
+    [[self window]  makeKeyAndOrderFront:self];
+    [[self textview] selectAll:self];
+}
 
 - (void) initialize {
     [[self textview] setFont:[NSFont fontWithName:@"Open Sans" size:18]];
     [[self textview] setDrawsBackground:NO];
     [[self textview] setInsertionPointColor:[NSColor whiteColor]];
     [[self textview] setTextColor:[NSColor whiteColor]];
+    
+    [self registerHotekey];
     
     [self restoreText];
 }
@@ -46,7 +54,10 @@
 }
 
 - (void) registerHotekey {
-
+    DDHotKeyCenter* center = [DDHotKeyCenter sharedHotKeyCenter];
+    if(! [center hasRegisteredHotKeyWithKeyCode:kVK_ANSI_M modifierFlags:(NSControlKeyMask | NSAlternateKeyMask)]) {
+        [center registerHotKeyWithKeyCode:kVK_ANSI_M modifierFlags:(NSControlKeyMask | NSAlternateKeyMask) target:self action:@selector(show:) object:nil];
+    }
 }
 
 @end

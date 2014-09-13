@@ -17,6 +17,8 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextView *textview;
 
+- (IBAction) show:(id)sender;
+
 - (void) initialize;
 - (NSString*) read;
 - (NSString*) filePath;
