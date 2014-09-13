@@ -20,31 +20,11 @@ void messagebox(NSString* message) {
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
 
-- (void) restoreText {
-    // Restroing the text
-    NSString* content = [[self note] read];
-    if(content) {
-        [[self textview] setString:content];
-    }
-}
-
-- (void) textDidChange:(NSNotification *)notification {
-    [[self note] write:[[self textview] string]];
-}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    self.note = [[ThinkingNote alloc] init];
-    
-    // Intialize the textview
-    [[self textview] setFont:[NSFont fontWithName:@"Open Sans" size:18]];
-    [[self textview] setDrawsBackground:NO];
-    [[self textview] setInsertionPointColor:[NSColor whiteColor]];
-    [[self textview] setTextColor:[NSColor whiteColor]];
-
-
-    // Initialze the hotkey center
-    [self restoreText];
+    // Intialize the note
+    [[self note] initialize];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "thinkingcloud.info.ThinkingNote" in the user's Application Support directory.

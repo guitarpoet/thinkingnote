@@ -13,11 +13,17 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="ThinkingAppDelegate">
             <connections>
+                <outlet property="note" destination="dmY-Xa-roc" id="gPN-Yn-FQK"/>
                 <outlet property="textview" destination="QmU-Uh-R68" id="2Gg-Cc-kxJ"/>
-                <outlet property="window" destination="Inj-EK-xml" id="mvv-bf-nm6"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="dmY-Xa-roc" userLabel="ThinkingNote" customClass="ThinkingNote">
+            <connections>
+                <outlet property="textview" destination="QmU-Uh-R68" id="obf-Qs-jiS"/>
+                <outlet property="window" destination="Inj-EK-xml" id="f5Z-hA-D3Y"/>
+            </connections>
+        </customObject>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="ThinkingNote" id="1Xt-HY-uBw">
@@ -692,7 +698,7 @@
                                     <size key="minSize" width="470" height="259"/>
                                     <size key="maxSize" width="470" height="10000000"/>
                                     <connections>
-                                        <outlet property="delegate" destination="Voe-Tx-rLC" id="h5S-jr-i5N"/>
+                                        <outlet property="delegate" destination="dmY-Xa-roc" id="2wl-de-quA"/>
                                     </connections>
                                 </textView>
                             </subviews>
@@ -715,9 +721,6 @@
                     <constraint firstItem="uXN-wV-NgP" firstAttribute="top" secondItem="l3r-OB-Y7r" secondAttribute="top" constant="5" id="pBd-xr-G1X"/>
                 </constraints>
             </view>
-            <connections>
-                <outlet property="menu" destination="AYu-sK-qS6" id="4Pr-gk-P6d"/>
-            </connections>
         </window>
     </objects>
 </document>

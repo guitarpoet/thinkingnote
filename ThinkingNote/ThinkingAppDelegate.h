@@ -7,22 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "common.h"
 #import "ThinkingNote.h"
 
 @interface ThinkingAppDelegate : NSObject <NSApplicationDelegate, NSTextViewDelegate>
 
-@property ThinkingNote* note;
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextView *textview;
+@property (assign) IBOutlet ThinkingNote* note;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
-- (IBAction)saveAction:(id)sender;
-- (void) restoreText;
-
 @end
-
-
-void messagebox(NSString* text);

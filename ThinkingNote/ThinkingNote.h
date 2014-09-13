@@ -9,12 +9,19 @@
 #import <Foundation/Foundation.h>
 #import "DDHotKeyCenter.h"
 
-@interface ThinkingNote : NSObject
+//
+// This is the main object for the thinking note, it'll handles all the function and calls
+//
+@interface ThinkingNote : NSObject <NSTextViewDelegate>
 
-@property DDHotKeyCenter* hotkeyCenter;
+@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSTextView *textview;
 
+- (void) initialize;
 - (NSString*) read;
-- (NSString*) file_path;
+- (NSString*) filePath;
+- (void) restoreText;
 - (void) write: (NSString*)note;
+- (void) registerHotekey;
 
 @end

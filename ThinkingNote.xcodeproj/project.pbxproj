@@ -97,6 +97,7 @@
 		04C6238119C3E7F400592374 /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyUtilities.h; sourceTree = "<group>"; };
 		04C6238219C3E7F400592374 /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyUtilities.m; sourceTree = "<group>"; };
 		04C6238619C3E7FD00592374 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		04C6238819C3F41A00592374 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +192,7 @@
 				0495904F19C2DC31009A629C /* Images.xcassets */,
 				0495904C19C2DC31009A629C /* ThinkingNote.xcdatamodeld */,
 				0495903B19C2DC31009A629C /* Supporting Files */,
+				04C6238819C3F41A00592374 /* common.h */,
 			);
 			path = ThinkingNote;
 			sourceTree = "<group>";

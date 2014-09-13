@@ -10,24 +10,43 @@
 
 @implementation ThinkingNote
 
-- (id) init {
-    self = [super init];
-    self.hotkeyCenter = [[DDHotKeyCenter alloc] init];
-    return self;
+- (void) initialize {
+    [[self textview] setFont:[NSFont fontWithName:@"Open Sans" size:18]];
+    [[self textview] setDrawsBackground:NO];
+    [[self textview] setInsertionPointColor:[NSColor whiteColor]];
+    [[self textview] setTextColor:[NSColor whiteColor]];
+    
+    [self restoreText];
+}
+
+- (void) textDidChange:(NSNotification *)notification {
+    [self write:[[self textview] string]];
+}
+
+- (void) restoreText {
+    // Restroing the text
+    NSString* content = [self read];
+    if(content) {
+        [[self textview] setString:content];
+    }
 }
 
 - (NSString*) read {
-    return [[NSString alloc] initWithContentsOfFile:[self file_path] encoding:NSUTF8StringEncoding error:nil];
+    return [[NSString alloc] initWithContentsOfFile:[self filePath] encoding:NSUTF8StringEncoding error:nil];
 }
 
-- (NSString*) file_path {
+- (NSString*) filePath {
     NSMutableString* home = [[NSMutableString alloc] initWithString:NSHomeDirectory()];
     [home appendString:@"/.thinking_note"];
     return home;
 }
 
 - (void) write:(NSString *)note {
-    [note writeToFile:[self file_path] atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    [note writeToFile:[self filePath] atomically:YES encoding:NSUTF8StringEncoding error:nil];
+}
+
+- (void) registerHotekey {
+
 }
 
 @end
