@@ -20,11 +20,23 @@ void messagebox(NSString* message) {
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
 
+- (void) textDidChange:(NSNotification *)notification {
+    [[self note] write:[[self textview] string]];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    self.note = [[ThinkingNote alloc] init];
     [[self textview] setFont:[NSFont fontWithName:@"Open Sans" size:24]];
-    [[self textview] setBackgroundColor: [NSColor blackColor]];
+    [[self textview] setDrawsBackground:NO];
+    //[[self textview] setBackgroundColor: [NSColor blackColor]];
     [[self textview] setTextColor:[NSColor whiteColor]];
+
+    // Restroing the text
+    NSString* content = [[self note] read];
+    if(content) {
+        [[self textview] setString:content];
+    }
     // Insert code here to initialize your application
 }
 

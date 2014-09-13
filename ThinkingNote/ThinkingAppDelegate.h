@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ThinkingNote.h"
 
-@interface ThinkingAppDelegate : NSObject <NSApplicationDelegate>
+@interface ThinkingAppDelegate : NSObject <NSApplicationDelegate, NSTextViewDelegate>
 
+@property ThinkingNote* note;
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextView *textview;
 

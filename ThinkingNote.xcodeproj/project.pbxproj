@@ -28,7 +28,7 @@
 		0495907A19C2DC31009A629C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0495907919C2DC31009A629C /* main.c */; };
 		0495907C19C2DC31009A629C /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495907B19C2DC31009A629C /* GetMetadataForFile.m */; };
 		0495907F19C2DC31009A629C /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495907E19C2DC31009A629C /* MySpotlightImporter.m */; };
-		0495908F19C2EBC2009A629C /* ThinkingInstallClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495908E19C2EBC2009A629C /* ThinkingInstallClipView.m */; };
+		0495909519C2FF96009A629C /* ThinkingNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495909419C2FF96009A629C /* ThinkingNote.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +82,8 @@
 		0495907E19C2DC31009A629C /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
 		0495908019C2DC31009A629C /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
 		0495908119C2DC31009A629C /* ThinkingNoteImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThinkingNoteImporter-Prefix.pch"; sourceTree = "<group>"; };
-		0495908D19C2EBC2009A629C /* ThinkingInstallClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinkingInstallClipView.h; sourceTree = "<group>"; };
-		0495908E19C2EBC2009A629C /* ThinkingInstallClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinkingInstallClipView.m; sourceTree = "<group>"; };
+		0495909319C2FF96009A629C /* ThinkingNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinkingNote.h; sourceTree = "<group>"; };
+		0495909419C2FF96009A629C /* ThinkingNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinkingNote.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +168,8 @@
 			children = (
 				0495904619C2DC31009A629C /* ThinkingAppDelegate.h */,
 				0495904719C2DC31009A629C /* ThinkingAppDelegate.m */,
-				0495908D19C2EBC2009A629C /* ThinkingInstallClipView.h */,
-				0495908E19C2EBC2009A629C /* ThinkingInstallClipView.m */,
+				0495909319C2FF96009A629C /* ThinkingNote.h */,
+				0495909419C2FF96009A629C /* ThinkingNote.m */,
 				0495904919C2DC31009A629C /* MainMenu.xib */,
 				0495904F19C2DC31009A629C /* Images.xcassets */,
 				0495904C19C2DC31009A629C /* ThinkingNote.xcdatamodeld */,
@@ -360,8 +360,8 @@
 			files = (
 				0495904819C2DC31009A629C /* ThinkingAppDelegate.m in Sources */,
 				0495904119C2DC31009A629C /* main.m in Sources */,
-				0495908F19C2EBC2009A629C /* ThinkingInstallClipView.m in Sources */,
 				0495904E19C2DC31009A629C /* ThinkingNote.xcdatamodeld in Sources */,
+				0495909519C2FF96009A629C /* ThinkingNote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
