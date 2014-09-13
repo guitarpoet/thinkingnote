@@ -14,6 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="ThinkingAppDelegate">
             <connections>
                 <outlet property="note" destination="dmY-Xa-roc" id="gPN-Yn-FQK"/>
+                <outlet property="statusbarMenu" destination="tzZ-gW-jfb" id="ty9-3f-61q"/>
                 <outlet property="textview" destination="QmU-Uh-R68" id="2Gg-Cc-kxJ"/>
             </connections>
         </customObject>
@@ -670,7 +671,7 @@
         <window title="ThinkNote" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Inj-EK-xml" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
             <rect key="contentRect" x="465" y="278" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <view key="contentView" id="l3r-OB-Y7r">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -687,10 +688,10 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="470" height="259"/>
-                                    <size key="maxSize" width="470" height="10000000"/>
+                                    <size key="maxSize" width="544" height="10000000"/>
                                     <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="470" height="259"/>
-                                    <size key="maxSize" width="470" height="10000000"/>
+                                    <size key="maxSize" width="544" height="10000000"/>
                                     <connections>
                                         <outlet property="delegate" destination="dmY-Xa-roc" id="2wl-de-quA"/>
                                     </connections>
@@ -716,5 +717,21 @@
                 </constraints>
             </view>
         </window>
+        <menu id="tzZ-gW-jfb">
+            <items>
+                <menuItem title="About" id="Bk8-xh-xge">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="orderFrontStandardAboutPanel:" target="-1" id="8V8-Th-1OZ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="om7-K8-Q6Q">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-3" id="HCN-cm-Zbs"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
     </objects>
 </document>

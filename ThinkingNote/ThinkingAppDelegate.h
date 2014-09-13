@@ -13,6 +13,9 @@
 @interface ThinkingAppDelegate : NSObject <NSApplicationDelegate, NSTextViewDelegate>
 
 @property (assign) IBOutlet ThinkingNote* note;
+@property (assign) IBOutlet NSMenu* statusbarMenu;
+
+@property NSStatusItem* statusBarItem;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

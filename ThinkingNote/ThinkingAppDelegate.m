@@ -25,6 +25,11 @@ void messagebox(NSString* message) {
 {
     // Intialize the note
     [[self note] initialize];
+    
+    self.statusBarItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [[self statusBarItem] setTitle:@"Thinking Note"];
+    [[self statusBarItem] setHighlightMode:YES];
+    [[self statusBarItem] setMenu:[self statusbarMenu]];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "thinkingcloud.info.ThinkingNote" in the user's Application Support directory.
