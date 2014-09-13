@@ -12,6 +12,9 @@
 @implementation ThinkingNote
 
 - (IBAction) show:(id)sender {
+    [self.window setCollectionBehavior: NSWindowCollectionBehaviorCanJoinAllSpaces];
+    NSApplication *myApp = [NSApplication sharedApplication];
+    [myApp activateIgnoringOtherApps:YES];
     [[self window]  makeKeyAndOrderFront:self];
     [[self textview] selectAll:self];
 }
