@@ -29,6 +29,11 @@
 		0495907C19C2DC31009A629C /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495907B19C2DC31009A629C /* GetMetadataForFile.m */; };
 		0495907F19C2DC31009A629C /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495907E19C2DC31009A629C /* MySpotlightImporter.m */; };
 		0495909519C2FF96009A629C /* ThinkingNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495909419C2FF96009A629C /* ThinkingNote.m */; };
+		04C6237B19C3E7B600592374 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C6237A19C3E7B600592374 /* Carbon.framework */; };
+		04C6238319C3E7F400592374 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6237E19C3E7F400592374 /* DDHotKeyCenter.m */; };
+		04C6238419C3E7F400592374 /* DDHotKeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6238019C3E7F400592374 /* DDHotKeyTextField.m */; };
+		04C6238519C3E7F400592374 /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6238219C3E7F400592374 /* DDHotKeyUtilities.m */; };
+		04C6238719C3E7FD00592374 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04C6238619C3E7FD00592374 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +89,14 @@
 		0495908119C2DC31009A629C /* ThinkingNoteImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThinkingNoteImporter-Prefix.pch"; sourceTree = "<group>"; };
 		0495909319C2FF96009A629C /* ThinkingNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinkingNote.h; sourceTree = "<group>"; };
 		0495909419C2FF96009A629C /* ThinkingNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinkingNote.m; sourceTree = "<group>"; };
+		04C6237A19C3E7B600592374 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		04C6237D19C3E7F400592374 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		04C6237E19C3E7F400592374 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		04C6237F19C3E7F400592374 /* DDHotKeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyTextField.h; sourceTree = "<group>"; };
+		04C6238019C3E7F400592374 /* DDHotKeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyTextField.m; sourceTree = "<group>"; };
+		04C6238119C3E7F400592374 /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyUtilities.h; sourceTree = "<group>"; };
+		04C6238219C3E7F400592374 /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyUtilities.m; sourceTree = "<group>"; };
+		04C6238619C3E7FD00592374 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C6237B19C3E7B600592374 /* Carbon.framework in Frameworks */,
 				0495903519C2DC31009A629C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +135,8 @@
 		0495902819C2DC31009A629C = {
 			isa = PBXGroup;
 			children = (
+				04C6238619C3E7FD00592374 /* README.md */,
+				04C6237C19C3E7F400592374 /* DDHotKey */,
 				0495903A19C2DC31009A629C /* ThinkingNote */,
 				0495905B19C2DC31009A629C /* ThinkingNoteTests */,
 				0495907319C2DC31009A629C /* ThinkingNoteImporter */,
@@ -142,6 +158,7 @@
 		0495903319C2DC31009A629C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04C6237A19C3E7B600592374 /* Carbon.framework */,
 				0495903419C2DC31009A629C /* Cocoa.framework */,
 				0495905619C2DC31009A629C /* XCTest.framework */,
 				0495906B19C2DC31009A629C /* CoreServices.framework */,
@@ -229,6 +246,19 @@
 				0495908119C2DC31009A629C /* ThinkingNoteImporter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04C6237C19C3E7F400592374 /* DDHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				04C6237D19C3E7F400592374 /* DDHotKeyCenter.h */,
+				04C6237E19C3E7F400592374 /* DDHotKeyCenter.m */,
+				04C6237F19C3E7F400592374 /* DDHotKeyTextField.h */,
+				04C6238019C3E7F400592374 /* DDHotKeyTextField.m */,
+				04C6238119C3E7F400592374 /* DDHotKeyUtilities.h */,
+				04C6238219C3E7F400592374 /* DDHotKeyUtilities.m */,
+			);
+			path = DDHotKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C6238719C3E7FD00592374 /* README.md in Resources */,
 				0495903F19C2DC31009A629C /* InfoPlist.strings in Resources */,
 				0495905019C2DC31009A629C /* Images.xcassets in Resources */,
 				0495904519C2DC31009A629C /* Credits.rtf in Resources */,
@@ -358,10 +389,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C6238319C3E7F400592374 /* DDHotKeyCenter.m in Sources */,
 				0495904819C2DC31009A629C /* ThinkingAppDelegate.m in Sources */,
 				0495904119C2DC31009A629C /* main.m in Sources */,
+				04C6238419C3E7F400592374 /* DDHotKeyTextField.m in Sources */,
 				0495904E19C2DC31009A629C /* ThinkingNote.xcdatamodeld in Sources */,
 				0495909519C2FF96009A629C /* ThinkingNote.m in Sources */,
+				04C6238519C3E7F400592374 /* DDHotKeyUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +667,7 @@
 				0495908619C2DC31009A629C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0495908719C2DC31009A629C /* Build configuration list for PBXNativeTarget "ThinkingNote" */ = {
 			isa = XCConfigurationList;
@@ -641,6 +676,7 @@
 				0495908919C2DC31009A629C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0495908A19C2DC31009A629C /* Build configuration list for PBXNativeTarget "ThinkingNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +685,7 @@
 				0495908C19C2DC31009A629C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

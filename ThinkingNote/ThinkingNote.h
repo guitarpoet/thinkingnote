@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DDHotKeyCenter.h"
 
 @interface ThinkingNote : NSObject
+
+@property DDHotKeyCenter* hotkeyCenter;
 
 - (NSString*) read;
 - (NSString*) file_path;

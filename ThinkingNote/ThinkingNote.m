@@ -10,6 +10,12 @@
 
 @implementation ThinkingNote
 
+- (id) init {
+    self = [super init];
+    self.hotkeyCenter = [[DDHotKeyCenter alloc] init];
+    return self;
+}
+
 - (NSString*) read {
     return [[NSString alloc] initWithContentsOfFile:[self file_path] encoding:NSUTF8StringEncoding error:nil];
 }

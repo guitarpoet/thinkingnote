@@ -670,7 +670,7 @@
         <window title="ThinkNote" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="Inj-EK-xml" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
             <rect key="contentRect" x="465" y="278" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
             <view key="contentView" id="l3r-OB-Y7r">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -712,7 +712,7 @@
                     <constraint firstAttribute="bottom" secondItem="uXN-wV-NgP" secondAttribute="bottom" constant="5" id="Fr9-Ks-jqF"/>
                     <constraint firstItem="uXN-wV-NgP" firstAttribute="leading" secondItem="l3r-OB-Y7r" secondAttribute="leading" constant="5" id="Y0v-eZ-3R5"/>
                     <constraint firstAttribute="trailing" secondItem="uXN-wV-NgP" secondAttribute="trailing" constant="5" id="hXk-TV-pEQ"/>
-                    <constraint firstAttribute="top" secondItem="uXN-wV-NgP" secondAttribute="top" constant="5" id="pBd-xr-G1X"/>
+                    <constraint firstItem="uXN-wV-NgP" firstAttribute="top" secondItem="l3r-OB-Y7r" secondAttribute="top" constant="5" id="pBd-xr-G1X"/>
                 </constraints>
             </view>
             <connections>
